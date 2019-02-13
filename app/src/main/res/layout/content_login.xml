@@ -1,11 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".activity.LoginActivity"
-    tools:showIn="@layout/activity_login">
+    tools:showIn="@layout/activity_login"
+    android:background="@drawable/inside_bg">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/wings_society_logo"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_10dp"
+        android:id="@+id/iv_logo"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/padding_5dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Email or Mobile Number"
+                android:textSize="15dp"
+                android:padding="@dimen/padding_10dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/ic_email"
+                android:layout_marginLeft="@dimen/margin_28dp"
+                android:layout_marginRight="@dimen/margin_28dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:visibility="invisible"
+                android:id="@+id/et_email"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Password"
+                android:textSize="15dp"
+                android:padding="@dimen/padding_10dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/ic_lock"
+                android:layout_marginLeft="@dimen/margin_28dp"
+                android:layout_marginRight="@dimen/margin_28dp"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:visibility="invisible"
+                android:id="@+id/et_pass"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forget Password?"
+                    android:textColor="#FFF"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/margin_5sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/margin_28dp"
+                    android:layout_marginRight="@dimen/margin_28dp"
+                    android:layout_marginTop="@dimen/margin_12dp"
+                    android:id="@+id/tv_forget_password"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:background="@color/colorAccent"
+                android:textColor="#FFF"
+                android:padding="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_28dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

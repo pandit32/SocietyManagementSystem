@@ -7,12 +7,24 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".activity.SplashScreenActivity"
-    tools:showIn="@layout/activity_splash_screen">
+    tools:showIn="@layout/activity_splash_screen"
+    android:background="@drawable/splash_bg">
 
-    <TextView
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash_side"
+        android:id="@+id/test"/>
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SplashScreen"
-        android:layout_centerInParent="true"/>
+        android:src="@drawable/wings_logo"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:padding="@dimen/padding_10dp"/>
+
 
 </RelativeLayout>

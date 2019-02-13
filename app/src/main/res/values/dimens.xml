@@ -1,3 +1,30 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_28dp">28dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+
+
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="padding_25dp">25dp</dimen>
+    <dimen name="padding_30dp">30dp</dimen>
+
+    <dimen name="margin_5sp">5sp</dimen>
+    <dimen name="margin_10sp">10sp</dimen>
+    <dimen name="margin_15sp">15sp</dimen>
+    <dimen name="margin_20sp">20sp</dimen>
+    <dimen name="margin_25sp">25sp</dimen>
+    <dimen name="margin_30sp">30sp</dimen>
+
 </resources>
