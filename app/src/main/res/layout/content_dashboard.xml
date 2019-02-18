@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.DashboardActivity"
+    tools:showIn="@layout/app_bar_dashboard"
+    android:background="@drawable/bg_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/margin_12dp"
+                        android:background="@drawable/round_bg"
+                        android:src="@drawable/ic_home"
+                        android:id="@+id/order_icon" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/margin_12dp"
+                        android:layout_marginStart="95dp"
+                        android:orientation="vertical"
+                        android:backgroundTint="@color/while_transparent"
+                        android:background="@drawable/sliced_dashbord_menu">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Last Maintenence"
+                            android:padding="@dimen/padding_5dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/text_order_no"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="02 Jan 2018"
+                                android:padding="@dimen/padding_5dp"
+                                android:textStyle="bold"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/margin_12dp"
+                        android:background="@drawable/round_bg"
+                        android:src="@drawable/ic_home" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/margin_12dp"
+                        android:layout_marginStart="95dp"
+                        android:orientation="vertical"
+                        android:backgroundTint="@color/while_transparent"
+                        android:background="@drawable/sliced_dashbord_menu">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Due Maintenance"
+                            android:padding="@dimen/padding_5dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="3000.00"
+                                android:padding="@dimen/padding_5dp"
+                                android:textStyle="bold"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/margin_12dp"
+                        android:background="@drawable/round_bg"
+                        android:src="@drawable/ic_home" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/margin_12dp"
+                        android:layout_marginStart="95dp"
+                        android:orientation="vertical"
+                        android:backgroundTint="@color/while_transparent"
+                        android:background="@drawable/sliced_dashbord_menu">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Meetings"
+                            android:padding="@dimen/padding_5dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="02 Jan 2018   04:00pm"
+                                android:padding="@dimen/padding_5dp"
+                                android:textStyle="bold"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/margin_12dp"
+                        android:background="@drawable/round_bg"
+                        android:src="@drawable/ic_home" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/margin_12dp"
+                        android:layout_marginStart="95dp"
+                        android:orientation="vertical"
+                        android:backgroundTint="@color/while_transparent"
+                        android:background="@drawable/sliced_dashbord_menu">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Your Complaints"
+                            android:padding="@dimen/padding_5dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="02"
+                                android:padding="@dimen/padding_5dp"
+                                android:textStyle="bold"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

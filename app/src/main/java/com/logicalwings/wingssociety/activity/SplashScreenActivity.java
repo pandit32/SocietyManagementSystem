@@ -36,7 +36,15 @@ public class SplashScreenActivity extends BaseActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startIntentWithoutBack(LoginActivity.class);
+                if (libFile.getBoolean(AppConstants.IS_LOGIN))
+                {
+                    startIntentWithoutBack(DashboardActivity.class);
+                }
+                else
+                {
+                    startIntentWithoutBack(LoginActivity.class);
+                }
+
             }
         }, AppConstants.SPLASH_TIME_MILLISECOND);
     }
